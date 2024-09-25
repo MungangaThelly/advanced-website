@@ -4,6 +4,22 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.content1 {
+    float: left;
+}
+
+.content2 {
+    float: right;
+}
+
+.content3 {
+    margin-top: auto;
+}
+
+form {
+    color: rgb(221, 13, 13);
+}
+
 input[type="text"],
 input[type="submit"],
 input[type="email"],
@@ -19,7 +35,8 @@ textarea {
 
 
 input[type="submit"] {
-    background-color: red;
+    background-color: rgb(186, 103, 103);
+    color: #fff;
 }
 
 .form-row {
@@ -27,5 +44,5 @@ input[type="submit"] {
 }
 
 .required {
-    color: red;
+    color: rgb(221, 13, 13);
 }

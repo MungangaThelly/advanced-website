@@ -7,28 +7,52 @@
     <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
-    <h1>Skicka ett meddelande</h1>
-    <P>Vi svarar så snabbt vi kan.</P>
-    <p>All fields with <span class="required">*</span> are required</p>
-    
-    <form action="" method="GET" accept-charset="UTF-8" enctype="text/plain">
-        <label for="namn">Namn<span class="required">*</span></label>
-        <input type="text" id="namn" name="namn" placeholder="Namn" required>
-        <label for="e-post">E-post<span class="required">*</span></label>
-        <input type="email" id="e-post" name="e-post" placeholder="exampel@mail.com" required>
-
-        <label for="telefonnummer"></label>
-        <input type="telefonnummer" id="telefonnummer" name="telefonnummer" placeholder="Telefonnummer" required>
-        <label for="meddelande">meddelande<span class="required">*</span></label>
-        <textarea name="meddelande" id="meddelande" rows="5">Skriv in ditt meddelande här</textarea>
-
-        <div class="form-row">
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">Samtycker du till att skicka in formuläret? <span class="required">*</span></label>
+    <div>
+        <div class="content1">
+            <div style="text-align: left;">
+                <img src="C:\Users\daddy\Pictures\Saved Pictures\oppettider.jpg" width="150px"  alt="Välkommen!">
+                <h4>Våra öppettider</h4>
+                <p>Vardagar kl 8-17</p>
+            </div>
         </div>
 
-        <input type="submit" value="SKICKA">
-        <!-- <button>skicka</button> -->
-    </form>
+        <div class="content2">
+            <div style="text-align: right;">
+                <img src="C:\Users\daddy\Pictures\Saved Pictures\kontakt.jpg" width="150px" alt="Client is King">
+                <h4>Kontaktuppgifter</h4>
+                <p>Växel: 10 000 00 00</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content3">
+        <div style="text-align: center;">
+            <h3>Välkommen!</h3>
+            <p>Skicka ett meddelande, vi svarar så snabbt vi kan.</p>
+        </div>
+    </div>
+
+            <form action="" method="GET" accept-charset="UTF-8" enctype="text/plain">
+                <label for="namn">Namn<span class="required">*</span></label>
+                <input type="text" id="namn" name="namn" placeholder="Namn" required>
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="exampel@mail.com" required>
+
+                <label for="telefonnummer"></label>
+                <input type="telefonnummer" id="telefonnummer" name="telefonnummer" placeholder="Telefonnummer" required>
+                <label for="meddelande">meddelande<span class="required">*</span></label>
+                <textarea name="meddelande" id="meddelande" rows="5" placeholder="Skriv in ditt meddelande här..."></textarea> 
+
+                <div class="form-row">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Samtycker du till att skicka in formuläret? <span class="required">*</span></label>
+                </div>
+
+                    <input type="submit" value="SKICKA">
+                    <!-- <button>skicka</button> -->
+            </form>
 </body>
 </html>
