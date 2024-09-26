@@ -1,0 +1,59 @@
+body {
+    margin: 0 ;
+}
+
+header {
+    background-image: url("../img/OIP\ \(4\).jpg");
+    background-size: cover;
+    height: 600px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-family: helvetica;
+    font-style: bold;
+}
+
+.intro {
+    width: fit-content;
+    height: fit-content;
+    font-size: 40px;
+    font-family: helvetica;
+    margin: 200px auto 0 150px;
+    padding: 5px;
+}
+
+.services {
+    margin: 50px 5%;
+    display: grid;
+    grid-template: 1fr 80% 1fr / 1fr 1fr 1fr;
+}
+
+.agency-header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+}
+
+.content {
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+footer {
+    background-color: rgb(20, 114, 77);
+    height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-info {
+    display: inline-block;
+    width: 30%;
+    border: 2px solid white;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
