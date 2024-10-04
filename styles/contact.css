@@ -1,7 +1,9 @@
+header {
+    height: fit-content;
+    width: auto;
+}
 body {
     background: url(../img/OIP\ \(3\).jfif);
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
 }
 
 body {
