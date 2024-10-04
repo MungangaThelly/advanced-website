@@ -22,7 +22,7 @@
         <div class="content1">
             <div style="text-align: left;">
                 <img src="../img/24-h.png" width="100px"  alt="Welcome!">
-                <h4><b>Opening Hours: Kl 8-17</b></h4>
+                <h4><b>Office Hours: Kl 8-17</b></h4>
             </div>
         </div>
 
@@ -37,52 +37,53 @@
         <div style="text-align: center;">
             <br>
             <br>
-            <h3><strong>ADVANCED WEBSITE</strong></h3>
+            <h1><strong>ADVANCED WEBSITE</strong></h1>
             <br>
             <br>
             <p><b>Please send us a message, we answer so fast we can</b>.</p>
         </div>
     </div>
-    <form action="" method="GET" accept-charset="UTF-8" enctype="text/plain">
-        <label for="name">Name<span class="required">*</span></label>
-        <input type="text" id="name" name="name" placeholder="Name" required>
-        <label for="email">Email<span class="required">*</span></label>
-        <input type="email" id="email" name="email" placeholder="exampel@mail.com" required>
 
-        <label for="telephonenumber"></label>
-        <input type="telephonenumber" id="telephonenumber" name="telephonenumber" placeholder="Telephonenumber" required>
-        <label for="message">message<span class="required">*</span></label>
-        <textarea name="message" id="message" rows="5" placeholder="Please write your message here..."></textarea> 
+        <form action="" method="GET" accept-charset="UTF-8" enctype="text/plain">
+            <label for="name">Name<span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="exampel@mail.com" required>
 
-        <div class="form-row">
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">Do you agree to submit this contact form? <span class="required">*</span></label>
-        </div>
+            <label for="telephonenumber"></label>
+            <input type="telephonenumber" id="telephonenumber" name="telephonenumber" placeholder="Telephonenumber" required>
+            <label for="message">message<span class="required">*</span></label>
+            <textarea name="message" id="message" rows="5" placeholder="Please write your message here..."></textarea> 
 
-            <input type="submit" value="SEND">
-            <!-- <button>send</button> -->
-    </form>
+            <div class="form-row">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Do you agree to submit this contact form? <span class="required">*</span></label>
+            </div>
 
-    <a href="#contactModal" class="contact-btn">BE CONTACTED</a>
+                <input type="submit" value="SEND">
+                <!-- <button>send</button> -->
+        </form>    
 
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close">&times;</a>
-            <h2>CONTACT ME</h2>
-            <form id="contactForm">
-                <label for="name">Name:*</label>
-                <input type="text" id="name" name="name" required placeholder="Name">
+        <a href="#contactModal" class="contact-btn">BE CONTACTED</a>
+
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h2>CONTACT ME</h2>
+                <form id="contactForm">
+                    <label for="name">Name:*</label>
+                    <input type="text" id="name" name="name" required placeholder="Name">
                 
-                <label for="email">Email:*</label>
-                <input type="email" id="email" name="email" required placeholder="exampel@mail.com">
+                    <label for="email">Email:*</label>
+                    <input type="email" id="email" name="email" required placeholder="exampel@mail.com">
                 
-                <label for="message">Message:*</label>
-                <textarea id="message" placeholder="Please write your message here..." name="message" required></textarea>
+                    <label for="message">Message:*</label>
+                    <textarea id="message" placeholder="Please write your message here..." name="message" required></textarea>
                 
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>    
 
 </body>
 </html>
