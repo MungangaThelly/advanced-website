@@ -24,13 +24,13 @@ body {
 
 .portfolio-list {
     display: grid; 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     @media(min-width: 700px) { grid-template-columns: 1fr 1fr; }
     @media(min-width: 1200px) { grid-template-columns: 1fr 1fr 1fr; }
     @media(min-width: 1500px) { grid-template-columns: 1fr 1fr 1fr 1fr; }
     & a { 
         background-color: black;
-        color: white;
+        color: white !important;
         text-align: center;
         text-decoration: none;
         min-height: 200px;
