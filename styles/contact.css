@@ -1,24 +1,27 @@
-header {
-    height: fit-content;
-    width: auto;
-}
-body {
-    background: url(../img/OIP\ \(3\).jfif);
+header .nav {
+    color: #fff;
 }
 
 body {
-    width: 500px;
+    width: 100%;
     margin: 20px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.content1, content2, .content3, form {
+    background-image: url(../img/OIP\ \(3\).jfif);}
+
 }
+
 
 .content1 {
     float: left;
+    margin: auto;
     color: white;
 }
 
 .content2 {
     float: right;
+    margin: auto;
     color: white;
 }
 
@@ -27,7 +30,10 @@ body {
 }
 
 form {
+    width: 50%;
+    margin: auto;
     color:white;
+    border-radius: 30px;   
 }
 
 input[type="text"],
@@ -36,12 +42,14 @@ input[type="email"],
 input[type="telephonenumber"],
 
 textarea {
-    width: 95%;
-    margin: 12px;
+    width: 90%;
+    margin:auto;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #333;
 }
+
+input[type="checkbox"],
 
 
 input[type="submit"] {
@@ -74,7 +82,7 @@ input[type="submit"]:hover {
 }
 
 .contact-btn:hover {
-    background-color:springgreen;
+    background-color: springgreen;
 }
 
 .modal {
@@ -94,11 +102,11 @@ input[type="submit"]:hover {
 }
 
 .modal-content {
-    background-color:lightseagreen;
+    background-color:gray;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 100px;
+    width: 50%; /* Could be more or less, depending on screen size */
 }
 
 .close {
@@ -115,6 +123,7 @@ input[type="submit"]:hover {
 
 form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
