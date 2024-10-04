@@ -17,6 +17,16 @@ nav {
     font-style: bold;
 }
 
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+a:link {
+    color: black;
+}
+
 .intro {
     width: fit-content;
     height: fit-content;
@@ -45,7 +55,7 @@ nav {
 }
 
 footer {
-    background-color: rgb(11, 37, 26);
+    background-color: rgb(120, 120, 120);
     height: 250px;
     width: 100%;
     text-align: center;
@@ -54,8 +64,8 @@ footer {
 .footer-info {
     display: inline-block;
     width: 30%;
-    border: 2px solid white;
+    border: 2px solid black;
     margin: 50px auto 0 auto;
     text-align: center;
-    color: white;
+    color: black;
 }
