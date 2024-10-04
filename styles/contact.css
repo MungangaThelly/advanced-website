@@ -36,6 +36,11 @@ input[type="submit"] {
     color: #fff;
 }
 
+input[type="submit"]:hover {
+    background-color: rgb(150, 80, 80); /* Change to your desired hover color */
+    color: #fff; /* Optional: change text color on hover */
+}
+
 .form-row {
     margin: 10px 0;
 }
