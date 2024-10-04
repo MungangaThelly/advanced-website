@@ -1,4 +1,10 @@
 body {
+    background: url(../img/OIP\ \(3\).jfif);
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+body {
     width: 500px;
     margin: 20px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,15 +12,20 @@ body {
 
 .content1 {
     float: left;
+    color: white;
 }
 
 .content2 {
     float: right;
+    color: white;
 }
 
+.content3 {
+    color: white;
+}
 
 form {
-    color: rgb(221, 13, 13);
+    color:white;
 }
 
 input[type="text"],
@@ -23,7 +34,7 @@ input[type="email"],
 input[type="telephonenumber"],
 
 textarea {
-    width: 100%;
+    width: 95%;
     margin: 12px;
     padding: 12px;
     border-radius: 5px;
@@ -33,7 +44,12 @@ textarea {
 
 input[type="submit"] {
     background-color: rgb(186, 103, 103);
-    color: #fff;
+    color: #fff
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(150, 80, 80); /* Change to your desired hover color */
+    color: #fff; /* Optional: change text color on hover */
 }
 
 .form-row {
@@ -42,4 +58,81 @@ input[type="submit"] {
 
 .required {
     color: rgb(221, 13, 13);
+}
+
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color:steelblue;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    float: inline-end;
+}
+
+.contact-btn:hover {
+    background-color:springgreen;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal:target {
+    display: block; /* Show the modal when targeted */
+}
+
+.modal-content {
+    background-color:lightseagreen;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color:lightsalmon;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: springgreen;
 }
