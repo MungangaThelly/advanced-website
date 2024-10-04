@@ -41,10 +41,11 @@ nav {
 .content {
     grid-row: 2 / 3;
     justify-self: center;
+    text-align: center;
 }
 
 footer {
-    background-color: rgb(20, 114, 77);
+    background-color: rgb(11, 37, 26);
     height: 250px;
     width: 100%;
     text-align: center;
@@ -56,4 +57,5 @@ footer {
     border: 2px solid white;
     margin: 50px auto 0 auto;
     text-align: center;
+    color: white;
 }
