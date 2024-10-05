@@ -7,26 +7,23 @@ body {
     margin: 20px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-.content1, content2, .content3, form {
-    background-image: url(../img/OIP\ \(3\).jfif);}
-
+form {
+    background-image: url(../img/OIP\ \(3\).jfif);
 }
-
+}
 
 .content1 {
     float: left;
     margin: auto;
-    color: white;
 }
 
 .content2 {
     float: right;
     margin: auto;
-    color: white;
 }
 
 .content3 {
-    color: white;
+    float: none;
 }
 
 form {
@@ -49,8 +46,6 @@ textarea {
     border: 1px solid #333;
 }
 
-input[type="checkbox"],
-
 
 input[type="submit"] {
     background-color: rgb(186, 103, 103);
@@ -58,7 +53,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(150, 80, 80); /* Change to your desired hover color */
+    background-color: rgb(150, 80, 80); /* can Change to your desired hover color */
     color: #fff; /* Optional: change text color on hover */
 }
 
