@@ -9,83 +9,78 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a class="home" href="../index.html"><p>Home</p></a>
-            <a class="shop" href="shop.html"><p>Shop</p></a>
-            <a class="about-us" href="about-us.html"><p>About Us</p></a>
-            <a class="contact-us" href="contact.html"><p>Contact Us</p></a>
-            <a class="portfolio" href="portfolio.html"><p>Portfolio</p></a>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="portfolio.html">Portfolio</a>
         </nav>
         <hr>
     </header>
-    <div>
-        <div class="content1">
-            <div style="text-align: left;">
-                <img src="../img/24-h.png" width="100px"  alt="Welcome!">
-                <h4><b>Office Hours: Kl 8-17</b></h4>
-            </div>
-        </div>
 
-        <div class="content2">
-            <div style="text-align: right;">
-                <img src="../img/telephone.png" width="100px" alt="Client is King">
-                <h4>Call-center: +46 10 000 00 00</h4>
-            </div>
+    <div class="contact-info">
+        <div class="office-hours">
+            <img src="../img/24-h.png" width="150px" alt="Welcome!">
+            <h4>Office Hours: Kl 8-17</h4>
         </div>
-    </div>
-    <div class="content3">
-        <div style="text-align: center;">
-            <br>
-            <h1><strong>CONTACT US</strong></h1>
-            <br>
-            <p>Please send us a message, we answer so fast we can.</p>
+        <div class="call-center">
+            <img src="../img/telephone.png" width="150px" alt="Client is King">
+            <h4>Call-center: +46 10 000 00 00</h4>
         </div>
     </div>
 
-        <form action="" method="GET" accept-charset="UTF-8" enctype="text/plain">
-            <label for="name">Name<span class="required">*</span></label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <label for="email">Email<span class="required">*</span></label>
-            <input type="email" id="email" name="email" placeholder="exampel@mail.com" required>
+    <div class="contact-header">
+        <h1>CONTACT US</h1>
+        <p>Please send us a message; we respond as quickly as we can.</p>
+    </div>
 
-            <label for="telephonenumber"></label>
-            <input type="telephonenumber" id="telephonenumber" name="telephonenumber" placeholder="Telephonenumber" required>
-            <label for="message">message<span class="required">*</span></label>
-            <textarea name="message" id="message" rows="5" placeholder="Please write your message here..."></textarea> 
+    <form action="" method="GET" accept-charset="UTF-8" enctype="text/plain" class="contact-form">
+        <label for="name">Name<span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
 
-            <div class="form-row">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">Do you agree to submit this contact form? <span class="required">*</span></label>
-            </div>
+        <label for="email">Email<span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
 
-                <input type="submit" value="SEND">
-                <!-- <button>send</button> -->
-        </form>    
+        <label for="telephonenumber">Telephone<span class="required">*</span></label>
+        <input type="tel" id="telephonenumber" name="telephonenumber" placeholder="Telephonenumber" required>
 
-        <a href="#contactModal" class="contact-btn">BE CONTACTED</a>
+        <label for="message">Message<span class="required">*</span></label>
+        <textarea name="message" id="message" rows="5" placeholder="Please write your message here..." required></textarea>
 
-        <div id="contactModal" class="modal">
-            <div class="modal-content">
-                <a href="#" class="close">&times;</a>
-                <h2>CONTACT ME</h2>
-                <form id="contactForm">
-                    <label for="name">Name:*</label>
-                    <input type="text" id="name" name="name" required placeholder="Name">
-                
-                    <label for="email">Email:*</label>
-                    <input type="email" id="email" name="email" required placeholder="exampel@mail.com">
-                
-                    <label for="message">Message:*</label>
-                    <textarea id="message" placeholder="Please write your message here..." name="message" required></textarea>
-                
-                    <input type="submit" value="Send">
-                </form>
-            </div>
+        <div class="form-row">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Do you agree to submit this contact form? <span class="required">*</span></label>
         </div>
-            <footer>
-                <section class="footer-info content1">Footer Content 1</section>
-                <section class="footer-info content3">Footer Content 2</section>
-                <section class="footer-info content2">Footer Content 3</section>
-            </footer>     
+
+        <input type="submit" value="SEND">
+    </form>
+
+    <a href="#contactModal" class="contact-btn">BE CONTACTED</a>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>CONTACT ME</h2>
+            <form id="contactForm">
+                <label for="modal-name">Name:*</label>
+                <input type="text" id="modal-name" name="name" required placeholder="Name">
+
+                <label for="modal-email">Email:*</label>
+                <input type="email" id="modal-email" name="email" required placeholder="example@mail.com">
+
+                <label for="modal-message">Message:*</label>
+                <textarea id="modal-message" placeholder="Please write your message here..." name="message" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="footer-info">Footer Content 1</section>
+        <section class="footer-info">Footer Content 2</section>
+        <section class="footer-info">Footer Content 3</section>
+    </footer>
 </body>
 </html>
