@@ -1,70 +1,58 @@
-header .nav {
-    color: #fff;
-}
-
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f8f8f8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+}
+
+.office-hours, .call-center {
+    text-align: center;
+}
+
+.contact-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
     width: 100%;
-    margin: 20px auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-form {
-    background-image: url(../img/OIP\ \(3\).jfif);
-}
-}
-
-.content1 {
-    float: left;
-    margin: auto;
-}
-
-.content2 {
-    float: right;
-    margin: auto;
-}
-
-.content3 {
-    float: none;
-}
-
-form {
-    width: 50%;
-    margin: auto;
-    color:white;
-    border-radius: 30px;   
-}
-
-input[type="text"],
-input[type="submit"],
-input[type="email"],
-input[type="telephonenumber"],
-
-textarea {
-    width: 90%;
-    margin:auto;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #333;
-}
-
-
-input[type="submit"] {
-    background-color: rgb(186, 103, 103);
-    color: #fff
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(150, 80, 80); /* can Change to your desired hover color */
-    color: #fff; /* Optional: change text color on hover */
+    max-width: 400px;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .form-row {
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
-
-.required {
-    color: rgb(221, 13, 13);
-}
-
 
 .contact-btn {
     padding: 10px 20px;
@@ -97,7 +85,7 @@ input[type="submit"]:hover {
 }
 
 .modal-content {
-    background-color:gray;
+    background-color:white;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border-radius: 100px;
@@ -117,6 +105,9 @@ input[type="submit"]:hover {
 }
 
 form {
+    background-image: url(../img/OIP\ \(3\).jfif);
+    background-repeat: no-repeat;
+    background-position: top;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -132,7 +123,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color:lightsalmon;
+    background-color:gray;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -141,4 +132,32 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: springgreen;
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.footer-info {
+    flex: 1;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
 }
